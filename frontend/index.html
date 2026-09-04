@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Top Bar -->
+        <header class="top-bar">
+
+            <div class="brand">
+                <span class="brand-dot"></span>
+
+                <span class="brand-name">
+                    ShopWave
+                </span>
+
+                <span class="brand-sub">
+                    / API monitor
+                </span>
+            </div>
+
+
+            <div class="top-right">
+
+                <span class="live">
+                    <span class="live-dot"></span>
+                    Watching 5 ShopWave endpoints
+                </span>
+
+                <button class="button">
+                    + Add monitor
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat">
+                <div class="stat-label">
+                    Total APIs
+                </div>
+
+                <div class="stat-value">
+                    5
+                </div>
+            </div>
+
+
+            <div class="stat">
+                <div class="stat-label">
+                    Healthy
+                </div>
+
+                <div class="stat-value healthy">
+                    4
+                </div>
+            </div>
+
+
+            <div class="stat">
+                <div class="stat-label">
+                    Down
+                </div>
+
+                <div class="stat-value down">
+                    1
+                </div>
+            </div>
+
+
+            <div class="stat">
+                <div class="stat-label">
+                    Avg response
+                </div>
+
+                <div class="stat-value">
+                    184 <span>ms</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Monitor Section -->
+        <section>
+
+            <div class="section-title">
+
+                <h2>Monitors</h2>
+
+                <span>
+                    Click a card to see recent checks
+                </span>
+
+            </div>
+
+
+            <!-- JavaScript puts the cards here -->
+            <div id="monitor-list"></div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
